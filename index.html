@@ -79,29 +79,29 @@
   <body class="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-200">
 
     <!-- Floating Header -->
-    <header class="fixed top-4 left-0 right-0 z-50 px-4 flex justify-center">
-      <div class="relative w-full max-w-4xl">
+    <header class="fixed top-4 left-0 right-0 z-50 px-4 flex justify-center pointer-events-none">
+      <div class="relative w-full max-w-4xl pointer-events-auto">
         
         <!-- Barra Principal -->
         <div class="bg-white/70 backdrop-blur-xl shadow-lg rounded-2xl md:rounded-full px-5 py-3 flex items-center justify-between border border-white/50 relative z-50">
           
           <!-- Logo -->
-          <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-            <div class="bg-blue-600 p-1.5 rounded-lg shadow-sm">
+          <div class="flex items-center gap-2 cursor-pointer group" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <div class="bg-blue-600 p-1.5 rounded-lg shadow-sm group-hover:bg-blue-700 transition-colors">
               <i data-lucide="code-2" class="w-5 h-5 text-white"></i>
             </div>
             <span class="font-bold text-lg tracking-tight text-slate-800">Web<span class="text-blue-600">Crafter</span></span>
           </div>
 
           <!-- Desktop Nav -->
-          <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 ml-auto mr-6">
-            <a href="#portfolio" class="hover:text-blue-600 transition-colors">Portfólio</a>
-            <a href="#processo" class="hover:text-blue-600 transition-colors">Processo</a>
-            <a href="#contato" class="hover:text-blue-600 transition-colors">Contato</a>
+          <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-600 ml-auto mr-6">
+            <a href="#portfolio" class="px-4 py-2 rounded-full hover:bg-slate-100 hover:text-blue-600 transition-all cursor-pointer">Portfólio</a>
+            <a href="#processo" class="px-4 py-2 rounded-full hover:bg-slate-100 hover:text-blue-600 transition-all cursor-pointer">Processo</a>
+            <a href="#contato" class="px-4 py-2 rounded-full hover:bg-slate-100 hover:text-blue-600 transition-all cursor-pointer">Contato</a>
           </nav>
 
           <!-- Desktop CTA -->
-          <a href="#contato" class="hidden md:inline-flex bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-transform hover:scale-105 shadow-lg shadow-slate-900/20">
+          <a href="https://wa.me/5521984125259?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="hidden md:inline-flex bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-transform hover:scale-105 shadow-lg shadow-slate-900/20">
             Orçamento
           </a>
 
@@ -118,15 +118,15 @@
             
             <!-- Menu Links -->
             <div class="space-y-1">
-              <a href="#portfolio" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group">
+              <a href="#portfolio" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group cursor-pointer">
                 <span class="font-bold text-slate-800">Portfólio</span>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors"></i>
               </a>
-              <a href="#processo" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group">
+              <a href="#processo" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group cursor-pointer">
                 <span class="font-bold text-slate-800">Processo</span>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors"></i>
               </a>
-              <a href="#contato" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group">
+              <a href="#contato" class="mobile-link flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 transition-colors group cursor-pointer">
                 <span class="font-bold text-slate-800">Contato</span>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors"></i>
               </a>
@@ -134,7 +134,7 @@
 
             <!-- CTA Button -->
             <div class="mt-4 px-2 mb-2">
-              <a href="#contato" class="mobile-link w-full bg-blue-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+              <a href="https://wa.me/5521984125259?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="mobile-link w-full bg-blue-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
                 Solicitar Orçamento <i data-lucide="sparkles" class="w-4 h-4"></i>
               </a>
             </div>
@@ -170,7 +170,7 @@
           <a href="#portfolio" class="bg-blue-600 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 text-sm md:text-base">
             Ver Projetos <i data-lucide="chevron-right" class="w-4 h-4"></i>
           </a>
-          <a href="#contato" class="bg-white text-slate-700 border border-slate-200 px-8 py-3.5 rounded-lg font-semibold hover:bg-slate-50 transition-all hover:scale-105 text-center text-sm md:text-base">
+          <a href="https://wa.me/5521984125259?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="bg-white text-slate-700 border border-slate-200 px-8 py-3.5 rounded-lg font-semibold hover:bg-slate-50 transition-all hover:scale-105 text-center text-sm md:text-base">
             Solicitar Orçamento
           </a>
         </div>
@@ -178,7 +178,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4 max-w-7xl mx-auto">
+    <section id="portfolio" class="py-20 px-4 max-w-7xl mx-auto scroll-mt-32">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Portfólio Selecionado</h2>
         <p class="text-slate-600">Veja exemplos reais de como podemos elevar a presença digital do seu negócio.</p>
@@ -313,7 +313,7 @@
     </section>
 
     <!-- Process Section -->
-    <section id="processo" class="bg-slate-900 text-white py-24 px-4">
+    <section id="processo" class="bg-slate-900 text-white py-24 px-4 scroll-mt-32">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Como Funciona</h2>
@@ -366,7 +366,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="py-24 px-4 max-w-4xl mx-auto">
+    <section id="contato" class="py-24 px-4 max-w-4xl mx-auto scroll-mt-32">
       <div class="bg-blue-600 rounded-3xl p-8 md:p-16 text-center text-white shadow-2xl shadow-blue-900/20">
         <h2 class="text-3xl md:text-5xl font-bold mb-12">Pronto para começar?</h2>
         
@@ -379,7 +379,7 @@
             <span class="text-xs text-blue-100 mt-1 font-semibold">Resposta imediata</span>
           </a>
 
-          <a href="https://instagram.com/rb.webcrafter" target="_blank" class="bg-white/10 backdrop-blur-lg hover:bg-white/20 transition-colors p-6 rounded-xl border border-white/10 flex flex-col items-center group">
+          <a href="https://instagram.com/rd.webcrafter" target="_blank" class="bg-white/10 backdrop-blur-lg hover:bg-white/20 transition-colors p-6 rounded-xl border border-white/10 flex flex-col items-center group">
             <div class="text-pink-400 mb-3 group-hover:scale-110 transition-transform">
                <i data-lucide="instagram" class="w-8 h-8"></i>
             </div>
@@ -411,7 +411,8 @@
       const menu = document.getElementById('mobile-menu');
       const menuIcon = document.getElementById('menu-icon');
       const closeIcon = document.getElementById('close-icon');
-      const links = document.querySelectorAll('.mobile-link');
+      // Update selector to include desktop links if needed, but the explicit handler below covers all
+      // const links = document.querySelectorAll('.mobile-link'); 
 
       let isMenuOpen = false;
 
@@ -454,18 +455,32 @@
 
       btn.addEventListener('click', toggleMenu);
 
-      // Close menu when clicking a link
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          if(isMenuOpen) toggleMenu();
-        });
-      });
-
       // Close menu when clicking outside
       document.addEventListener('click', (e) => {
         if (isMenuOpen && !menu.contains(e.target) && !btn.contains(e.target)) {
           toggleMenu();
         }
+      });
+
+      // Unified Smooth Scroll Handler for all Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // If mobile menu is open, close it
+                if (isMenuOpen) toggleMenu();
+
+                // Smooth scroll
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
       });
     </script>
   </body>
