@@ -19,14 +19,6 @@
               jakarta: ['Plus Jakarta Sans', 'sans-serif'],
             },
             colors: {
-              web: {
-                blue: '#2563EB',
-                dark: '#0F172A',
-              },
-              vita: {
-                primary: '#14B8A6',
-                dark: '#0F766E',
-              },
               lumiere: {
                 gold: '#D4AF37',
                 dark: '#1C1917',
@@ -42,8 +34,8 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-[#0c0c0c]/80 backdrop-blur-md border-b border-white/5">
       <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-        <a href="index.html" class="flex items-center gap-2 no-underline">
-          <div class="text-yellow-600 bg-yellow-600/10 p-1 rounded-full">
+        <a href="index.html" class="flex items-center gap-2 no-underline group">
+          <div class="text-yellow-600 bg-yellow-600/10 p-1 rounded-full group-hover:bg-yellow-600 group-hover:text-black transition-colors">
              <i data-lucide="sparkles" class="w-5 h-5"></i>
           </div>
           <span class="font-serif text-2xl text-white tracking-[0.2em] uppercase">Lumière</span>
@@ -70,8 +62,17 @@
          <img 
            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2000" 
            alt="Luxury Spa Face" 
-           class="w-full h-full object-cover opacity-60"
+           class="w-full h-full object-cover opacity-60 animate-ken-burns"
          />
+         <style>
+            @keyframes ken-burns {
+                0% { transform: scale(1); }
+                100% { transform: scale(1.1); }
+            }
+            .animate-ken-burns {
+                animation: ken-burns 20s ease-out infinite alternate;
+            }
+         </style>
       </div>
 
       <div class="relative z-20 max-w-7xl w-full px-6 flex items-center">
@@ -177,8 +178,8 @@
              </ul>
           </div>
           <div class="md:w-1/2 grid grid-cols-2 gap-4">
-             <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-tl-[4rem]" alt="Interior 1" />
-             <img src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-tr-[1rem] translate-y-8" alt="Interior 2" />
+             <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-tl-[4rem] hover:scale-[1.02] transition-transform duration-500" alt="Interior 1" />
+             <img src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-tr-[1rem] translate-y-8 hover:scale-[1.02] transition-transform duration-500" alt="Interior 2" />
           </div>
         </div>
       </div>
@@ -203,7 +204,7 @@
           </button>
         </form>
 
-        <p class="mt-8 text-stone-500 text-sm italic font-serif">Ou entre em contato via WhatsApp: <span class="text-yellow-600 underline cursor-pointer">(21) 98412-5259</span></p>
+        <p class="mt-8 text-stone-500 text-sm italic font-serif">Ou entre em contato via WhatsApp: <span class="text-yellow-600 underline cursor-pointer hover:text-white transition-colors">(21) 98412-5259</span></p>
       </div>
     </section>
 
@@ -218,9 +219,9 @@
         <div class="flex flex-col items-center">
            <h2 class="font-serif text-3xl text-white tracking-[0.2em] uppercase mb-4">Lumière</h2>
            <div class="flex gap-6 text-stone-400">
-             <i data-lucide="instagram" class="w-5 h-5 hover:text-white cursor-pointer"></i>
-             <i data-lucide="facebook" class="w-5 h-5 hover:text-white cursor-pointer"></i>
-             <i data-lucide="phone" class="w-5 h-5 hover:text-white cursor-pointer"></i>
+             <i data-lucide="instagram" class="w-5 h-5 hover:text-white cursor-pointer transition-colors"></i>
+             <i data-lucide="facebook" class="w-5 h-5 hover:text-white cursor-pointer transition-colors"></i>
+             <i data-lucide="phone" class="w-5 h-5 hover:text-white cursor-pointer transition-colors"></i>
            </div>
         </div>
 
